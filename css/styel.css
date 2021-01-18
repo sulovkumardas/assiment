@@ -1,0 +1,220 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-family: 'Maven Pro', sans-serif;
+	font-size: 14px;
+	line-height: 24px;
+}
+
+h1, h2, h3, h4, h5, h6{
+font-family: 'Libre Franklin', sans-serif;
+
+}
+
+a, a:hover{
+	text-decoration: none;
+}
+/******* header section start*********/
+.header-section{
+	width: 100%;
+	background: url("../images/he.jpg") center top no-repeat;
+	background-size: cover;
+	
+}
+.header-section .bg-light{
+	background: transparent !important;
+}
+.header-section .navbar-brand img{
+	width: 100px;
+}
+.header-section .navbar-light .navbar-nav .nav-link.active{
+	color: #6633cc;
+	background: url("../images/li.jpg") center bottom no-repeat;
+	background-size: contain;
+}
+.header-section .navbar-light .navbar-nav .nav-link {
+    color: #000;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.header-section .navbar-light .navbar-nav .nav-link:focus, .header-section .navbar-light .navbar-nav .nav-link:hover{
+	color: #6633cc;
+	background: url("../images/li.jpg") center bottom no-repeat;
+	background-size: contain;
+}
+.header-section .btn-info {
+    padding: 8px 35px;
+    margin-left: 12px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+    border: none;
+    border-radius: 35px;
+    text-transform: capitalize;
+    background: linear-gradient(to right, #6633cc, #0099ff);
+}
+.header-section .btn-info:hover, .header-section .btn-info:focus{
+    background: linear-gradient(to right, #0099ff, #6633cc);
+    color: #fff;	
+}
+.banner{
+	width: 100%;
+	padding: 90px 0px;
+} 
+.inner-banner{
+	width: 100%;
+	padding: 100px 0px;
+	text-align: right;
+
+}
+.inner-banner h1{
+ font-size: 52px;
+ font-weight: 800;
+ line-height: 60px;
+}
+.inner-banner h1 span{
+	color: #6633cc;
+}
+.inner-banner .btn-primary{
+    padding: 8px 35px;
+     margin-top: 25px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #000;
+    border: 1px solid #f2f2f2;
+    background: #f2f2f2;
+    border-radius: 35px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+.inner-banner .btn-primary:hover, .inner-banner .btn-primary:focus{
+	color: #fff;
+    border: 1px solid #6633cc;
+    background: #6633cc;
+}
+
+/*highlight section start*/
+.highlight{
+	background: url("../images/hight.jpg") center top no-repeat; 
+	background-size: cover;
+	padding: 10px 0px;
+	
+}
+
+.highlight{
+	width: 100%;
+	position: relative;
+}
+
+.highlight .inner-hight img {
+    position: absolute;
+    mix-blend-mode: darken;
+    width: 250px;
+    top: -51px;
+    left: 180px;
+} 
+.inner-hight h2{
+	font-size: 26px;
+	font-weight: 700;
+	line-height: 36px;
+	color: #fff;
+	text-align: center;
+}
+
+.hheader-section{
+	width: 100%;
+	padding: 80px 0px;
+	background: url("../images/Bg.jpg") center top no-repeat;
+	background-size: cover;
+
+}
+.futures{
+	width: 100%;
+	padding: 180px 0px;
+}
+.hheader-section .futures h1{
+	font-size: 42px;
+	line-height: 54px;
+	font-weight: 800;
+	text-transform: capitalize;
+	color: #000; 
+}
+
+.hheader-section .futures h5{
+    font-size: 14px;
+	line-height: 24px;
+	font-weight: 400;
+	text-transform: capitalize;
+	color: #000;
+}
+.hheader-section .futures p{
+	padding: 20px;
+    font-size: 14px;
+	line-height: 24px;
+	font-weight: 600;
+	text-transform: capitalize;
+	color: #000;
+}
+.hheader-section .futures  span {
+  padding: 50px 0px;
+  font-size: 90px;
+  line-height: 100px;
+ /* box-shadow: 1px 2px 4px .5,*/
+/*  margin-left: -8px;
+*/  font-weight: 700;
+  color: #6633cc;
+  background: linear-gradient(to right, #6633cc, #3366ff);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+
+}
+
+
+
+/* for Mobile device*/
+@media(min-width: 320px) and (max-width: 480px){
+ .header-section .bg-light{
+	background: transparent !important;
+}
+.header-section .navbar-light .navbar-nav .nav-link.active{
+	background-size: auto;
+	background: url("../images/li.jpg") center bottom no-repeat;
+}
+.header-section .navbar-light .navbar-nav .nav-link:focus, .header-section .navbar-light .navbar-nav .nav-link:hover{
+	background: url("../images/li.jpg") center bottom no-repeat;
+	background-size: auto;
+}
+.navbar-light .navbar-toggler {
+  color: rgba(0,0,0,.55);
+  border-color: #08c;
+}
+.navbar-toggler:focus{
+	box-shadow: 0 0 0 4px #08c;
+}
+.banner{
+	padding: 80px 0px;
+}
+.inner-banner h1{
+ font-size: 30px;
+ font-weight: 800;
+ line-height: 38px;
+}
+
+}
+/* for tablet device*/
+@media(min-width: 481px) and (max-width: 767px){
+ .banner{
+	padding: 80px 0px;
+}
+}
+/* for notebook device*/
+@media(min-width: 768px) and (max-width: 1024px){
+
+}
+/* for laptop , desktop device*/
+@media (min-width: 1025px) and (max-width: 1280px){
+
+}
